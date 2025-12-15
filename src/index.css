@@ -358,6 +358,144 @@ body {
 }
 
 
+/* ============================= */
+/* 📱 TABLET & MOBILE FIXES */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  .box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main {
+    justify-content: stretch;
+  }
+}
+
+/* ============================= */
+/* 📱 MOBILE DEVICES */
+/* ============================= */
+
+@media (max-width: 768px) {
+  body {
+    padding: 1.2rem;
+  }
+
+  /* Navbar */
+  .nav-bar {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 1rem;
+    padding: 1.6rem;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .search {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .num-results {
+    justify-self: center;
+    font-size: 1.4rem;
+  }
+
+  /* Main layout */
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Movie list */
+  .list li {
+    grid-template-columns: 6rem 1fr;
+    padding: 1.2rem;
+    column-gap: 1.6rem;
+  }
+
+  .list h3 {
+    font-size: 1.6rem;
+  }
+
+  /* Movie details */
+  .details header {
+    flex-direction: column;
+  }
+
+  .details img {
+    width: 100%;
+  }
+
+  .details-overview {
+    padding: 2rem;
+  }
+
+  .details-overview h2 {
+    font-size: 2rem;
+  }
+
+  .details section {
+    padding: 2rem;
+  }
+
+  /* Rating & buttons */
+  .rating {
+    padding: 1.6rem;
+  }
+
+  .btn-add {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+  }
+
+  .btn-toggle {
+    height: 3rem;
+    font-size: 1.6rem;
+  }
+
+  .btn-delete {
+    height: 2.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* ============================= */
+/* 📱 SMALL PHONES */
+/* ============================= */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 56%;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  .summary div {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .summary p {
+    font-size: 1.4rem;
+  }
+}
+
+
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
