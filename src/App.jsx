@@ -7,7 +7,8 @@ import { useMovies } from "./useMovies";
 const average = (arr) =>
   arr.reduce((acc, cur) => acc + cur / arr.length, 0);
 
-const KEY = "d2c17e75";
+const KEY = import.meta.env.VITE_OMDB_API_KEY;
+
 
 export default function App() {
   const [query, setQuery] = useState("");
